@@ -1,4 +1,4 @@
-# openmosh-relay — Architecture (Phase 2)
+# falconer-relay — Architecture (Phase 2)
 
 Clean Architecture organized by feature. Global rules: dependencies point inward (`domain` imports no framework or I/O), features never import
 another feature's adapters, and wiring happens only in the composition root.
@@ -25,4 +25,4 @@ src/
 
 1. The domain treats the payload as opaque bytes. No decryption code exists in this repo.
 2. No payload logging, enforced by a test that inspects log output.
-3. Same layering rules as `openmosh-hook`.
+3. Same layering rules as `falconer-hook`.
